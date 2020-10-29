@@ -1,0 +1,175 @@
+/* Add additional stylesheets below
+-------------------------------------------------- */
+* {
+    font-family: "Helvetica", Helvetica, sans-serif;
+}
+header{
+    height: 115px;
+    border: #cce6ff;
+    font-style:light;
+    margin: 5px;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.board {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    font-size: 40px;
+    text-align: left;
+}
+#info_container {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 93%;
+    opacity:0.8;
+}
+#last_action {
+    text-align: center;
+    width: 93%;
+    height:148px;
+    margin-left: 5px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: white;
+    opacity:0.8;
+}
+#place_buttons {
+    background-color: white;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 2px;
+    text-align: center;
+}
+#sunk_ships {
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-left: 5px;
+    width: 43%;
+}
+body{
+    background-image: url("https://i.imgur.com/Qf1yuwb.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 120vh;
+    z-index: -1;
+}
+h1 {
+    margin: 5px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.battleGrid {
+
+    padding: 20px;
+    border-spacing: 0px;
+
+}
+
+.numcell{
+    padding-right: 10px;
+}
+
+#hiddencell {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
+    text-align: center;
+    width: 30px;
+    background: none;
+    border: none;
+}
+
+.normiecell{
+    opacity: 0.4;
+    background: white;
+}
+
+.battleGrid tr {
+    font-size: 30px;
+    border: 1px solid black;
+    height: 53px;
+}
+
+.battleGrid td {
+    border: 1px solid black;
+    width: 60px;
+}
+
+td:hover {
+    background-color: gray;
+
+}
+
+.placed {
+    background-color: gray;
+    opacity: 1;
+}
+
+.occupied {
+    background-color: black;
+    opacity: 1;
+}
+
+.gray {
+    background-color: gray;
+    opacity: 1;
+}
+
+.hit {
+    background-color: orange !important;
+    opacity: .9;
+}
+
+.sink {
+    background-color: red !important;
+    opacity: .9;
+}
+
+.miss {
+    background-color: blue;
+    opacity: .9;
+}
+button {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+#place_buttons button:hover {
+    background-color: gray;
+    color: white;
+}
+#place_buttons button:active {
+    background-color: black;
+}
+button:focus {outline:0;}
+
+#normcell:hover{
+    background: gray;
+}

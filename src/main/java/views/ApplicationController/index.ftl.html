@@ -1,0 +1,52 @@
+<#import "../layout/defaultLayout.ftl.html" as layout> 
+<@layout.myLayout "Home page">
+
+<div id="container">
+    <div class="board">
+        <table id="player" class="battleGrid">
+            Player
+        </table>
+        <div id ="info_container">
+            <div id="place_buttons">
+                Place Ships<br>
+                <button id="place_minesweeper">Minesweeper</button>
+                <button id="place_destroyer">Destroyer</button>
+                <button id="place_battleship">Battleship</button><br>
+                <button id="place_submarine">Submarine</button><br>                
+                <input type="checkbox" id="is_vertical">Vertical
+                <button id="sonar_button">Activate Sonar</button><br>
+                Move
+                <button id="move_north">NORTH</button>
+                <button id="move_east">EAST</button>
+                <button id="move_south">SOUTH</button>
+                <button id="move_west">WEST</button>
+            </div>
+            <div id="sunk_ships">
+                Sunk Ships <br>
+                <button id="opp_minesweeper">Minesweeper</button>
+                <button id="opp_destroyer">Destroyer</button>
+                <button id="opp_battleship">Battleship</button>
+                <button id="opp_submarine">Submarine</button>
+            </div>
+        </div>
+    </div>
+    <div class="board">
+        <table id="opponent" class="battleGrid">
+            Opponent
+        </table>
+        <div id="last_action">
+            <div style="text-align:center;font-size:25px;">
+                <span id="last_action_header;">Last Action</span>
+                <hr>
+            </div>
+            <p id="last_action_text"></p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/assets/game.js"></script>
+<script>
+    initGame();
+</script>
+
+</@layout.myLayout>
